@@ -4,6 +4,7 @@ import { ReviewCard } from "@/components/ReviewCard";
 import { Loader2, ArrowLeft, Star } from "lucide-react";
 import { toast } from "sonner";
 import { useBookById } from "@/hooks/useBookById";
+import { Button } from "@/components/ui/button";
 
 export default function BookDetail() {
   const { id } = useParams();
@@ -102,7 +103,7 @@ export default function BookDetail() {
         <main className="container mx-auto max-w-6xl px-4 py-12">
           <button
             onClick={() => navigate("/")}
-            className="flex items-center gap-2 text-primary hover:text-secondary mb-8 transition-colors"
+            className="flex items-center gap-2 text-primary hover:text-gray-700 mb-8 transition-colors hover:cursor-pointer"
           >
             <ArrowLeft className="w-4 h-4" />
             Back to Books
@@ -129,7 +130,7 @@ export default function BookDetail() {
       <main className="container mx-auto max-w-6xl px-4 py-8">
         <button
           onClick={() => navigate("/")}
-          className="flex items-center gap-2 text-primary hover:text-secondary mb-8 transition-colors"
+          className="flex items-center gap-2 text-primary hover:text-gray-500 mb-8 transition-colors hover:cursor-pointer"
         >
           <ArrowLeft className="w-4 h-4" />
           Back to Books
@@ -152,7 +153,7 @@ export default function BookDetail() {
 
           <div className="md:col-span-2">
             <h1 className="font-serif text-4xl font-bold mb-2">{book.title}</h1>
-            <p className="text-xl text-secondary font-semibold mb-4">
+            <p className="text-xl text-gray-500 font-semibold mb-4">
               by {book.author}
             </p>
 
@@ -309,21 +310,22 @@ export default function BookDetail() {
               )}
 
               <div className="flex gap-3 pt-4">
-                <button
+                <Button
                   type="submit"
                   disabled={submittingReview}
                   className="px-6 py-2 bg-primary text-primary-foreground rounded-lg hover:bg-opacity-90 transition-colors font-medium disabled:opacity-50 disabled:cursor-not-allowed"
                 >
                   {submittingReview ? "Submitting..." : "Submit Review"}
-                </button>
-                <button
+                </Button>
+                <Button
+                  variant="secondary"
                   type="button"
                   onClick={() => setShowForm(false)}
                   disabled={submittingReview}
                   className="px-6 py-2 bg-muted text-foreground rounded-lg hover:bg-opacity-80 transition-colors font-medium disabled:opacity-50 disabled:cursor-not-allowed"
                 >
                   Cancel
-                </button>
+                </Button>
               </div>
             </form>
           </div>
