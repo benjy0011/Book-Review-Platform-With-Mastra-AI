@@ -68,13 +68,13 @@ The server should now be running on `http://localhost:5000`
 From the root of the project:
 
 ```bash
-cd frontend
+cd client
 ```
 
 Or if you're in the server directory:
 
 ```bash
-cd ../frontend
+cd ../client
 ```
 
 ### 2. Install dependencies
