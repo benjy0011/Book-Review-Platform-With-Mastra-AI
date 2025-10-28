@@ -1,4 +1,4 @@
-# Project Setup Guide
+# Book-Review-Platform-With-Mastra-AI
 
 This project consists of a simple backend server with Mastra AI integration and a frontend application. Mainly I am exploring the integration of AI into web dev. Testing, deployment anf other features will be added in future.
 
