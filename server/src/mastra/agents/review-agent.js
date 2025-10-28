@@ -1,8 +1,6 @@
 import { Agent } from "@mastra/core/agent";
 import { z } from "zod";
 
-// Define schema for input / output if needed
-// e.g. validate that you get a string review text
 const inputSchema = z.object({
   reviewText: z.string().min(1),
 });
