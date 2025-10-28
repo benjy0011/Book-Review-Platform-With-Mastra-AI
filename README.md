@@ -1,6 +1,6 @@
 # Project Setup Guide
 
-This project consists of a simple backend server with Mastra AI integration and a frontend application. Mainly I am exploring the integration of AI into web dev. Testing, deployment adn other features will be added in future.
+This project consists of a simple backend server with Mastra AI integration and a frontend application. Mainly I am exploring the integration of AI into web dev. Testing, deployment anf other features will be added in future.
 
 ## Prerequisites
 
